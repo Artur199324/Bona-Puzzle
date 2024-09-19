@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CBBAB20A31FEC045D20C610 /* Pods_Bona_Puzzle_LandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D41629D6E9C5F316920263 /* Pods_Bona_Puzzle_LandTests.framework */; };
+		2AB6E8E71C42FFD4B7280528 /* Pods_Bona_Puzzle_Land_Bona_Puzzle_LandUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81184CAA349351BB776DE237 /* Pods_Bona_Puzzle_Land_Bona_Puzzle_LandUITests.framework */; };
+		6EAD9BE4BBED24B35D9408DD /* Pods_Bona_Puzzle_Land.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8109528E341B3A476259CC5A /* Pods_Bona_Puzzle_Land.framework */; };
+		756EF50F2C9C13B10026EB10 /* Bona_Puzzle_LandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF50E2C9C13B10026EB10 /* Bona_Puzzle_LandApp.swift */; };
+		756EF5112C9C13B10026EB10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF5102C9C13B10026EB10 /* ContentView.swift */; };
+		756EF5132C9C13B30026EB10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756EF5122C9C13B30026EB10 /* Assets.xcassets */; };
+		756EF5162C9C13B30026EB10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756EF5152C9C13B30026EB10 /* Preview Assets.xcassets */; };
+		756EF5202C9C13B40026EB10 /* Bona_Puzzle_LandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF51F2C9C13B40026EB10 /* Bona_Puzzle_LandTests.swift */; };
+		756EF52A2C9C13B40026EB10 /* Bona_Puzzle_LandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF5292C9C13B40026EB10 /* Bona_Puzzle_LandUITests.swift */; };
+		756EF52C2C9C13B40026EB10 /* Bona_Puzzle_LandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF52B2C9C13B40026EB10 /* Bona_Puzzle_LandUITestsLaunchTests.swift */; };
+		756EF53A2C9C1FA50026EB10 /* SaveBac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF5392C9C1FA50026EB10 /* SaveBac.swift */; };
+		756EF5402C9C20E90026EB10 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF53F2C9C20E90026EB10 /* BackgroundView.swift */; };
+		7574638C2C9D70F100E6F753 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574638B2C9D70F100E6F753 /* RulesView.swift */; };
+		7574638E2C9D734100E6F753 /* SelectLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574638D2C9D734100E6F753 /* SelectLevelView.swift */; };
+		757463902C9D753400E6F753 /* SavePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574638F2C9D753400E6F753 /* SavePoints.swift */; };
+		757463922C9D78CB00E6F753 /* SaveLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463912C9D78CB00E6F753 /* SaveLevel.swift */; };
+		757463952C9D7FD400E6F753 /* Game1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463942C9D7FD400E6F753 /* Game1View.swift */; };
+		757463972C9DEEFD00E6F753 /* Game2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463962C9DEEFD00E6F753 /* Game2View.swift */; };
+		757463992C9E032F00E6F753 /* Game3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463982C9E032F00E6F753 /* Game3View.swift */; };
+		7574639B2C9E063D00E6F753 /* Game4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574639A2C9E063D00E6F753 /* Game4View.swift */; };
+		7574639D2C9E0A4000E6F753 /* Game5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574639C2C9E0A4000E6F753 /* Game5View.swift */; };
+		7574639F2C9E0DF900E6F753 /* Game6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574639E2C9E0DF900E6F753 /* Game6View.swift */; };
+		757463A12C9E117000E6F753 /* Game7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463A02C9E117000E6F753 /* Game7View.swift */; };
+		757463A32CA0A60F00E6F753 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463A22CA0A60F00E6F753 /* QuizView.swift */; };
+		757463A52CA145CA00E6F753 /* DailyBonusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463A42CA145CA00E6F753 /* DailyBonusView.swift */; };
+		757463A72CA1479600E6F753 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463A62CA1479600E6F753 /* ShopView.swift */; };
+		757463A92CA148C700E6F753 /* BacAplua.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463A82CA148C700E6F753 /* BacAplua.swift */; };
+		757463AB2CA14B4900E6F753 /* SetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463AA2CA14B4900E6F753 /* SetingsView.swift */; };
+		757463AD2CA14CFA00E6F753 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463AC2CA14CFA00E6F753 /* WebView.swift */; };
+		757463AF2CA14D6100E6F753 /* TermsofUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463AE2CA14D6100E6F753 /* TermsofUseView.swift */; };
+		757463B12CA14DB900E6F753 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757463B02CA14DB900E6F753 /* PrivacyPolicyView.swift */; };
+		75A20A2E2CA16C3800121398 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 75A20A2D2CA16C3800121398 /* codemagic.yaml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		756EF51C2C9C13B40026EB10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 756EF5032C9C13B10026EB10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 756EF50A2C9C13B10026EB10;
+			remoteInfo = "Bona Puzzle Land";
+		};
+		756EF5262C9C13B40026EB10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 756EF5032C9C13B10026EB10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 756EF50A2C9C13B10026EB10;
+			remoteInfo = "Bona Puzzle Land";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F5A8209DEEC390F878857CE /* Pods-Bona Puzzle Land.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bona Puzzle Land.debug.xcconfig"; path = "Target Support Files/Pods-Bona Puzzle Land/Pods-Bona Puzzle Land.debug.xcconfig"; sourceTree = "<group>"; };
+		16620DA79C52F95CB888F89B /* Pods-Bona Puzzle LandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bona Puzzle LandTests.release.xcconfig"; path = "Target Support Files/Pods-Bona Puzzle LandTests/Pods-Bona Puzzle LandTests.release.xcconfig"; sourceTree = "<group>"; };
+		30A0782FAE052C96C942FEA3 /* Pods-Bona Puzzle LandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bona Puzzle LandTests.debug.xcconfig"; path = "Target Support Files/Pods-Bona Puzzle LandTests/Pods-Bona Puzzle LandTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EAC27294916E1D32E3B3B35 /* Pods-Bona Puzzle Land-Bona Puzzle LandUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bona Puzzle Land-Bona Puzzle LandUITests.release.xcconfig"; path = "Target Support Files/Pods-Bona Puzzle Land-Bona Puzzle LandUITests/Pods-Bona Puzzle Land-Bona Puzzle LandUITests.release.xcconfig"; sourceTree = "<group>"; };
+		756EF50B2C9C13B10026EB10 /* Bona Puzzle Land.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bona Puzzle Land.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		756EF50E2C9C13B10026EB10 /* Bona_Puzzle_LandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bona_Puzzle_LandApp.swift; sourceTree = "<group>"; };
+		756EF5102C9C13B10026EB10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		756EF5122C9C13B30026EB10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		756EF5152C9C13B30026EB10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		756EF51B2C9C13B40026EB10 /* Bona Puzzle LandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bona Puzzle LandTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		756EF51F2C9C13B40026EB10 /* Bona_Puzzle_LandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bona_Puzzle_LandTests.swift; sourceTree = "<group>"; };
+		756EF5252C9C13B40026EB10 /* Bona Puzzle LandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bona Puzzle LandUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		756EF5292C9C13B40026EB10 /* Bona_Puzzle_LandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bona_Puzzle_LandUITests.swift; sourceTree = "<group>"; };
+		756EF52B2C9C13B40026EB10 /* Bona_Puzzle_LandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bona_Puzzle_LandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		756EF5392C9C1FA50026EB10 /* SaveBac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveBac.swift; sourceTree = "<group>"; };
+		756EF53F2C9C20E90026EB10 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		7574638B2C9D70F100E6F753 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		7574638D2C9D734100E6F753 /* SelectLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelView.swift; sourceTree = "<group>"; };
+		7574638F2C9D753400E6F753 /* SavePoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePoints.swift; sourceTree = "<group>"; };
+		757463912C9D78CB00E6F753 /* SaveLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLevel.swift; sourceTree = "<group>"; };
+		757463942C9D7FD400E6F753 /* Game1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game1View.swift; sourceTree = "<group>"; };
+		757463962C9DEEFD00E6F753 /* Game2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2View.swift; sourceTree = "<group>"; };
+		757463982C9E032F00E6F753 /* Game3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game3View.swift; sourceTree = "<group>"; };
+		7574639A2C9E063D00E6F753 /* Game4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game4View.swift; sourceTree = "<group>"; };
+		7574639C2C9E0A4000E6F753 /* Game5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game5View.swift; sourceTree = "<group>"; };
+		7574639E2C9E0DF900E6F753 /* Game6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game6View.swift; sourceTree = "<group>"; };
+		757463A02C9E117000E6F753 /* Game7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game7View.swift; sourceTree = "<group>"; };
+		757463A22CA0A60F00E6F753 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		757463A42CA145CA00E6F753 /* DailyBonusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBonusView.swift; sourceTree = "<group>"; };
+		757463A62CA1479600E6F753 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		757463A82CA148C700E6F753 /* BacAplua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacAplua.swift; sourceTree = "<group>"; };
+		757463AA2CA14B4900E6F753 /* SetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetingsView.swift; sourceTree = "<group>"; };
+		757463AC2CA14CFA00E6F753 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		757463AE2CA14D6100E6F753 /* TermsofUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsofUseView.swift; sourceTree = "<group>"; };
+		757463B02CA14DB900E6F753 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		75A20A2D2CA16C3800121398 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
+		8109528E341B3A476259CC5A /* Pods_Bona_Puzzle_Land.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bona_Puzzle_Land.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81184CAA349351BB776DE237 /* Pods_Bona_Puzzle_Land_Bona_Puzzle_LandUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bona_Puzzle_Land_Bona_Puzzle_LandUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54405C1CA0DAF9BC5ACD025 /* Pods-Bona Puzzle Land-Bona Puzzle LandUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bona Puzzle Land-Bona Puzzle LandUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bona Puzzle Land-Bona Puzzle LandUITests/Pods-Bona Puzzle Land-Bona Puzzle LandUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2D41629D6E9C5F316920263 /* Pods_Bona_Puzzle_LandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bona_Puzzle_LandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9112169AA1C51053ED13DFB /* Pods-Bona Puzzle Land.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bona Puzzle Land.release.xcconfig"; path = "Target Support Files/Pods-Bona Puzzle Land/Pods-Bona Puzzle Land.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		756EF5082C9C13B10026EB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAD9BE4BBED24B35D9408DD /* Pods_Bona_Puzzle_Land.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756EF5182C9C13B40026EB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBBAB20A31FEC045D20C610 /* Pods_Bona_Puzzle_LandTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756EF5222C9C13B40026EB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB6E8E71C42FFD4B7280528 /* Pods_Bona_Puzzle_Land_Bona_Puzzle_LandUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		756EF5022C9C13B10026EB10 = {
+			isa = PBXGroup;
+			children = (
+				75A20A2D2CA16C3800121398 /* codemagic.yaml */,
+				756EF50D2C9C13B10026EB10 /* Bona Puzzle Land */,
+				756EF51E2C9C13B40026EB10 /* Bona Puzzle LandTests */,
+				756EF5282C9C13B40026EB10 /* Bona Puzzle LandUITests */,
+				756EF50C2C9C13B10026EB10 /* Products */,
+				C62BE7F7E8E37C37ABA405F7 /* Pods */,
+				F66D8C35EFCCD9E447E06A74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		756EF50C2C9C13B10026EB10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				756EF50B2C9C13B10026EB10 /* Bona Puzzle Land.app */,
+				756EF51B2C9C13B40026EB10 /* Bona Puzzle LandTests.xctest */,
+				756EF5252C9C13B40026EB10 /* Bona Puzzle LandUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		756EF50D2C9C13B10026EB10 /* Bona Puzzle Land */ = {
+			isa = PBXGroup;
+			children = (
+				756EF53B2C9C1FEB0026EB10 /* view */,
+				756EF5382C9C1F950026EB10 /* save */,
+				756EF50E2C9C13B10026EB10 /* Bona_Puzzle_LandApp.swift */,
+				756EF5122C9C13B30026EB10 /* Assets.xcassets */,
+				756EF5142C9C13B30026EB10 /* Preview Content */,
+			);
+			path = "Bona Puzzle Land";
+			sourceTree = "<group>";
+		};
+		756EF5142C9C13B30026EB10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				756EF5152C9C13B30026EB10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		756EF51E2C9C13B40026EB10 /* Bona Puzzle LandTests */ = {
+			isa = PBXGroup;
+			children = (
+				756EF51F2C9C13B40026EB10 /* Bona_Puzzle_LandTests.swift */,
+			);
+			path = "Bona Puzzle LandTests";
+			sourceTree = "<group>";
+		};
+		756EF5282C9C13B40026EB10 /* Bona Puzzle LandUITests */ = {
+			isa = PBXGroup;
+			children = (
+				756EF5292C9C13B40026EB10 /* Bona_Puzzle_LandUITests.swift */,
+				756EF52B2C9C13B40026EB10 /* Bona_Puzzle_LandUITestsLaunchTests.swift */,
+			);
+			path = "Bona Puzzle LandUITests";
+			sourceTree = "<group>";
+		};
+		756EF5382C9C1F950026EB10 /* save */ = {
+			isa = PBXGroup;
+			children = (
+				756EF5392C9C1FA50026EB10 /* SaveBac.swift */,
+				7574638F2C9D753400E6F753 /* SavePoints.swift */,
+				757463912C9D78CB00E6F753 /* SaveLevel.swift */,
+				757463A82CA148C700E6F753 /* BacAplua.swift */,
+			);
+			path = save;
+			sourceTree = "<group>";
+		};
+		756EF53B2C9C1FEB0026EB10 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				757463932C9D7FAA00E6F753 /* gameLevel */,
+				756EF53C2C9C1FFC0026EB10 /* partView */,
+				756EF5102C9C13B10026EB10 /* ContentView.swift */,
+				7574638B2C9D70F100E6F753 /* RulesView.swift */,
+				7574638D2C9D734100E6F753 /* SelectLevelView.swift */,
+				757463A22CA0A60F00E6F753 /* QuizView.swift */,
+				757463A42CA145CA00E6F753 /* DailyBonusView.swift */,
+				757463A62CA1479600E6F753 /* ShopView.swift */,
+				757463AA2CA14B4900E6F753 /* SetingsView.swift */,
+				757463AE2CA14D6100E6F753 /* TermsofUseView.swift */,
+				757463B02CA14DB900E6F753 /* PrivacyPolicyView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		756EF53C2C9C1FFC0026EB10 /* partView */ = {
+			isa = PBXGroup;
+			children = (
+				756EF53F2C9C20E90026EB10 /* BackgroundView.swift */,
+				757463AC2CA14CFA00E6F753 /* WebView.swift */,
+			);
+			path = partView;
+			sourceTree = "<group>";
+		};
+		757463932C9D7FAA00E6F753 /* gameLevel */ = {
+			isa = PBXGroup;
+			children = (
+				757463942C9D7FD400E6F753 /* Game1View.swift */,
+				757463962C9DEEFD00E6F753 /* Game2View.swift */,
+				757463982C9E032F00E6F753 /* Game3View.swift */,
+				7574639A2C9E063D00E6F753 /* Game4View.swift */,
+				7574639C2C9E0A4000E6F753 /* Game5View.swift */,
+				7574639E2C9E0DF900E6F753 /* Game6View.swift */,
+				757463A02C9E117000E6F753 /* Game7View.swift */,
+			);
+			path = gameLevel;
+			sourceTree = "<group>";
+		};
+		C62BE7F7E8E37C37ABA405F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F5A8209DEEC390F878857CE /* Pods-Bona Puzzle Land.debug.xcconfig */,
+				F9112169AA1C51053ED13DFB /* Pods-Bona Puzzle Land.release.xcconfig */,
+				A54405C1CA0DAF9BC5ACD025 /* Pods-Bona Puzzle Land-Bona Puzzle LandUITests.debug.xcconfig */,
+				6EAC27294916E1D32E3B3B35 /* Pods-Bona Puzzle Land-Bona Puzzle LandUITests.release.xcconfig */,
+				30A0782FAE052C96C942FEA3 /* Pods-Bona Puzzle LandTests.debug.xcconfig */,
+				16620DA79C52F95CB888F89B /* Pods-Bona Puzzle LandTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F66D8C35EFCCD9E447E06A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8109528E341B3A476259CC5A /* Pods_Bona_Puzzle_Land.framework */,
+				81184CAA349351BB776DE237 /* Pods_Bona_Puzzle_Land_Bona_Puzzle_LandUITests.framework */,
+				C2D41629D6E9C5F316920263 /* Pods_Bona_Puzzle_LandTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		756EF50A2C9C13B10026EB10 /* Bona Puzzle Land */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756EF52F2C9C13B40026EB10 /* Build configuration list for PBXNativeTarget "Bona Puzzle Land" */;
+			buildPhases = (
+				36109181A0DBB64A774DB939 /* [CP] Check Pods Manifest.lock */,
+				756EF5072C9C13B10026EB10 /* Sources */,
+				756EF5082C9C13B10026EB10 /* Frameworks */,
+				756EF5092C9C13B10026EB10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bona Puzzle Land";
+			productName = "Bona Puzzle Land";
+			productReference = 756EF50B2C9C13B10026EB10 /* Bona Puzzle Land.app */;
+			productType = "com.apple.product-type.application";
+		};
+		756EF51A2C9C13B40026EB10 /* Bona Puzzle LandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756EF5322C9C13B40026EB10 /* Build configuration list for PBXNativeTarget "Bona Puzzle LandTests" */;
+			buildPhases = (
+				298B5B4AAE53D34DAB58F944 /* [CP] Check Pods Manifest.lock */,
+				756EF5172C9C13B40026EB10 /* Sources */,
+				756EF5182C9C13B40026EB10 /* Frameworks */,
+				756EF5192C9C13B40026EB10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				756EF51D2C9C13B40026EB10 /* PBXTargetDependency */,
+			);
+			name = "Bona Puzzle LandTests";
+			productName = "Bona Puzzle LandTests";
+			productReference = 756EF51B2C9C13B40026EB10 /* Bona Puzzle LandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		756EF5242C9C13B40026EB10 /* Bona Puzzle LandUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756EF5352C9C13B40026EB10 /* Build configuration list for PBXNativeTarget "Bona Puzzle LandUITests" */;
+			buildPhases = (
+				1D87178283A9FE7F01602B59 /* [CP] Check Pods Manifest.lock */,
+				756EF5212C9C13B40026EB10 /* Sources */,
+				756EF5222C9C13B40026EB10 /* Frameworks */,
+				756EF5232C9C13B40026EB10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				756EF5272C9C13B40026EB10 /* PBXTargetDependency */,
+			);
+			name = "Bona Puzzle LandUITests";
+			productName = "Bona Puzzle LandUITests";
+			productReference = 756EF5252C9C13B40026EB10 /* Bona Puzzle LandUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		756EF5032C9C13B10026EB10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					756EF50A2C9C13B10026EB10 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					756EF51A2C9C13B40026EB10 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 756EF50A2C9C13B10026EB10;
+					};
+					756EF5242C9C13B40026EB10 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 756EF50A2C9C13B10026EB10;
+					};
+				};
+			};
+			buildConfigurationList = 756EF5062C9C13B10026EB10 /* Build configuration list for PBXProject "Bona Puzzle Land" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 756EF5022C9C13B10026EB10;
+			productRefGroup = 756EF50C2C9C13B10026EB10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				756EF50A2C9C13B10026EB10 /* Bona Puzzle Land */,
+				756EF51A2C9C13B40026EB10 /* Bona Puzzle LandTests */,
+				756EF5242C9C13B40026EB10 /* Bona Puzzle LandUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		756EF5092C9C13B10026EB10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A20A2E2CA16C3800121398 /* codemagic.yaml in Resources */,
+				756EF5162C9C13B30026EB10 /* Preview Assets.xcassets in Resources */,
+				756EF5132C9C13B30026EB10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756EF5192C9C13B40026EB10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756EF5232C9C13B40026EB10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D87178283A9FE7F01602B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bona Puzzle Land-Bona Puzzle LandUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		298B5B4AAE53D34DAB58F944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bona Puzzle LandTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36109181A0DBB64A774DB939 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bona Puzzle Land-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		756EF5072C9C13B10026EB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756EF5112C9C13B10026EB10 /* ContentView.swift in Sources */,
+				757463972C9DEEFD00E6F753 /* Game2View.swift in Sources */,
+				757463922C9D78CB00E6F753 /* SaveLevel.swift in Sources */,
+				7574639B2C9E063D00E6F753 /* Game4View.swift in Sources */,
+				757463AB2CA14B4900E6F753 /* SetingsView.swift in Sources */,
+				757463992C9E032F00E6F753 /* Game3View.swift in Sources */,
+				757463AD2CA14CFA00E6F753 /* WebView.swift in Sources */,
+				757463A12C9E117000E6F753 /* Game7View.swift in Sources */,
+				757463A52CA145CA00E6F753 /* DailyBonusView.swift in Sources */,
+				7574639D2C9E0A4000E6F753 /* Game5View.swift in Sources */,
+				7574638E2C9D734100E6F753 /* SelectLevelView.swift in Sources */,
+				757463B12CA14DB900E6F753 /* PrivacyPolicyView.swift in Sources */,
+				7574638C2C9D70F100E6F753 /* RulesView.swift in Sources */,
+				756EF50F2C9C13B10026EB10 /* Bona_Puzzle_LandApp.swift in Sources */,
+				756EF5402C9C20E90026EB10 /* BackgroundView.swift in Sources */,
+				757463A72CA1479600E6F753 /* ShopView.swift in Sources */,
+				756EF53A2C9C1FA50026EB10 /* SaveBac.swift in Sources */,
+				757463952C9D7FD400E6F753 /* Game1View.swift in Sources */,
+				757463AF2CA14D6100E6F753 /* TermsofUseView.swift in Sources */,
+				757463A32CA0A60F00E6F753 /* QuizView.swift in Sources */,
+				757463902C9D753400E6F753 /* SavePoints.swift in Sources */,
+				757463A92CA148C700E6F753 /* BacAplua.swift in Sources */,
+				7574639F2C9E0DF900E6F753 /* Game6View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756EF5172C9C13B40026EB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756EF5202C9C13B40026EB10 /* Bona_Puzzle_LandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756EF5212C9C13B40026EB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756EF52A2C9C13B40026EB10 /* Bona_Puzzle_LandUITests.swift in Sources */,
+				756EF52C2C9C13B40026EB10 /* Bona_Puzzle_LandUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		756EF51D2C9C13B40026EB10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 756EF50A2C9C13B10026EB10 /* Bona Puzzle Land */;
+			targetProxy = 756EF51C2C9C13B40026EB10 /* PBXContainerItemProxy */;
+		};
+		756EF5272C9C13B40026EB10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 756EF50A2C9C13B10026EB10 /* Bona Puzzle Land */;
+			targetProxy = 756EF5262C9C13B40026EB10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		756EF52D2C9C13B40026EB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		756EF52E2C9C13B40026EB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		756EF5302C9C13B40026EB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5A8209DEEC390F878857CE /* Pods-Bona Puzzle Land.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bona Puzzle Land/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonapuzzlegg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		756EF5312C9C13B40026EB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9112169AA1C51053ED13DFB /* Pods-Bona Puzzle Land.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bona Puzzle Land/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonapuzzlegg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		756EF5332C9C13B40026EB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A0782FAE052C96C942FEA3 /* Pods-Bona Puzzle LandTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonapuzzlegg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bona Puzzle Land.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bona Puzzle Land";
+			};
+			name = Debug;
+		};
+		756EF5342C9C13B40026EB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16620DA79C52F95CB888F89B /* Pods-Bona Puzzle LandTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonapuzzlegg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bona Puzzle Land.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bona Puzzle Land";
+			};
+			name = Release;
+		};
+		756EF5362C9C13B40026EB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54405C1CA0DAF9BC5ACD025 /* Pods-Bona Puzzle Land-Bona Puzzle LandUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonapuzzlegg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bona Puzzle Land";
+			};
+			name = Debug;
+		};
+		756EF5372C9C13B40026EB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAC27294916E1D32E3B3B35 /* Pods-Bona Puzzle Land-Bona Puzzle LandUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonapuzzlegg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bona Puzzle Land";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		756EF5062C9C13B10026EB10 /* Build configuration list for PBXProject "Bona Puzzle Land" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756EF52D2C9C13B40026EB10 /* Debug */,
+				756EF52E2C9C13B40026EB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		756EF52F2C9C13B40026EB10 /* Build configuration list for PBXNativeTarget "Bona Puzzle Land" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756EF5302C9C13B40026EB10 /* Debug */,
+				756EF5312C9C13B40026EB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		756EF5322C9C13B40026EB10 /* Build configuration list for PBXNativeTarget "Bona Puzzle LandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756EF5332C9C13B40026EB10 /* Debug */,
+				756EF5342C9C13B40026EB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		756EF5352C9C13B40026EB10 /* Build configuration list for PBXNativeTarget "Bona Puzzle LandUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756EF5362C9C13B40026EB10 /* Debug */,
+				756EF5372C9C13B40026EB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 756EF5032C9C13B10026EB10 /* Project object */;
+}
